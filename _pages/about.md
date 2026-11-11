@@ -17,22 +17,20 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a PhD. student at Tsinghua University, Interdisciplinary Information Sciences, advised by Prof. Yang Gao. I obtained B.E. at Shanghai Jiao Tong University, majoring in automation(IEEE class). I love to study how the digital world percepts and controls the physical world. So, my research interests are robotics and embodied AI.  
+I am a Ph.D. student at the **Institute for Interdisciplinary Information Sciences, Tsinghua University**, advised by [Prof. Yang Gao](https://yang-gao.weebly.com/). I received my B.E. in Automation from the IEEE Honor Class at **Shanghai Jiao Tong University**. I study how robots perceive, act, and keep improving in the physical world. My research is in robotics and embodied AI, including agentic robotics, reliable evaluation of robot policies, and autonomous policy improvement.
 
 
-Favored programming language: Python, C++, Matlab. Like to program in an organized way: understandable variable names, clean comments, good file structure and git commit logs. Hate functions that written by other programmer but have no comments or docs.
+I mainly write in Python, C++, and Matlab, and I care about readable names, clear comments, a clean file layout, and careful commit history.
 
 # 🎖 Honors and Awards
-- *2022.11* CUMCM, Provincial Second Prize
+- *2023.10* COSCO Scholarship
 - *2022.10* Suzhou Yu Cai Scholarship
-- *2022.10* SJTU Scholarship, Grade B
 - *2022.4* COMAP, M Prize
-- *2021.10* COSCO Scholarship, Third Award
 - *2021.10* SJTU Scholarship, Grade B
 
 # 📖 Educations
-- *2024.09 - now*, PhD. student, Tsinghua University, Beijing.  
-- *2020.09 - 2024.06*, Undergraduate, Shanghai Jiao Tong University, Shanghai.  
+- *2024.09 - now*, PhD. student, Institute for Interdisciplinary Information Sciences, Tsinghua University, Beijing.  
+- *2020.09 - 2024.06*, B.E., Shanghai Jiao Tong University, Shanghai.  
   **Score**: 91.02/100 **Rank**: 1/28
 
 # 💬 Language
@@ -40,6 +38,34 @@ Favored programming language: Python, C++, Matlab. Like to program in an organiz
 - *TOEFL* 104 (Reading 29, Listening 29, Speaking 22, Writing 24)
 
 # 📝 Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2027 Inproceeding</div><img src='images/skill-space-shooting.png' alt="Skill-Space Shooting loop. A likely failure interrupts the rollout. The robot tries a skill from a shared library and learns from verified repairs." width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Skill-Space Shooting for Autonomous Robot Policy Improvement](https://arxiv.org/abs/2609.38178)
+
+Zihang Rui\*, Renhao Wang\*, Haoxu Huang, Yang Gao
+
+[**Project Page**](https://skill-space-shooting.github.io/) | [**Paper**](https://arxiv.org/abs/2609.38178)
+- Skill-space shooting improves a robot task policy without minimal human intervention. When a failure is likely, the robot tries a reusable skill, and a foundation model selects and checks the repair.
+- Successful repair segments become imitation-learning supervision. Shared skills also reduce the teaching needed to improve on new tasks.
+- \*Equal contribution. Submitted to ICLR 2027.
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICRA 2027 Inproceeding</div><img src='images/ci-mse.jpg' alt="Critical Interval MSE" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Critical Interval MSE: Toward Reliable Offline Validation for Robot Manipulation Policies](https://arxiv.org/abs/2606.29898)
+
+Haoxu Huang, Tongsam Zheng, Yifan Chen, Jiacheng You, Yang Gao
+
+[**Project Page**](https://ci-mse.github.io/) | [**Paper**](https://arxiv.org/abs/2606.29898) | [**Code**](https://github.com/CI-MSE/CI-MSE)
+- CI-MSE is an offline validation metric that scores manipulation policies only on task-critical segments, such as contact, grasping, insertion, and fine alignment.
+- With rollout-time action alignment, it tracks real rollout success more closely than raw MSE: Spearman correlation improves from −0.61 to −0.87 across 27 policy checkpoints.
+- Submitted to ICRA 2027.
+</div>
+</div>
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">IROS 2024</div><img src='images/copa.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -54,19 +80,4 @@ Haoxu Huang, Fanqi Lin, Yingdong Hu, Shengjie Wang, Yang Gao
 </div>
 </div>
 
-# 💻 Projects
-## Make Illustrator Relationship Visible
-[github](https://github.com/BPsoda/ICE2604-illustrator-knowledge-grapgh)  
-The final project for course ICE2604(电类工程导论). It is a cooperation project led by me. This project includes:  
-- *Scraper* We implemented a data scraper with Python and get information of illustrators and illustrations from [pixiv](https://www.pixiv.net)
-- *Database* The data are stored and organized in mysql.
-- *Analyze & Visualization* We analyze the relationship among illustrators by tags attached to their works and followers. Then, we visualized these results as charts and a huge relation map.
-- *Website* We designed an interactive website where users can look into statistics, search for illustrators and browse illustrations.
 
-## A P2P BBS
-[github](https://github.com/BPsoda/ComputerNetHomework)  
-A BBS based on P2P network. Final project for Computer Network.
-
-## Fundus Images Processing
-Final project for Digital Image Processing.   
-We first localize the macula lutea with CNN, the align and normalize the image. Next, the vessels are segmented with U-Net and are removed to get clean images with Fast Marching Method (FMM).
